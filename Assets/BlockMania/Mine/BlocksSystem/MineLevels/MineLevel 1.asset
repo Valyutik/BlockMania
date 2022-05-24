@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f2c779dc833464a82f402539772dc5a, type: 3}
+  m_Name: MineLevel 1
+  m_EditorClassIdentifier: 
+  blocks:
+  - {fileID: 2087999456246245849, guid: d84d5e14c1c9fab4d9a9dbcd021c1c2f, type: 3}
+  - {fileID: 2087999456246245849, guid: 49fce2ebd0093964c83876a6e32b3089, type: 3}
+  numberLevel: 0
