@@ -4,6 +4,6 @@ namespace BlockMania.Mine.UI
 {
     public interface IDigButton
     {
-        public event Action OnStartHoldEvent, OnEndHoldEvent;
+        event Action OnPressEvent, OnReleaseEvent;
     }
 }

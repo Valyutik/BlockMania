@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BlockMania.Mine.BlocksSystem.MineLevels;
 using UnityEngine;
 
 namespace BlockMania.Mine.BlocksSystem
@@ -20,9 +21,9 @@ namespace BlockMania.Mine.BlocksSystem
         private const int Height = 3;
         private BlockRandomizer blockRandomizer;
         
-        public void Initialize(MineLevels.MineLevels mineLevels, int mineLevel)
+        public void Initialize(MineLevel mineLevel)
         {
-            blockRandomizer = new BlockRandomizer(mineLevels.GetMineLevel(mineLevel).blocks);
+            blockRandomizer = new BlockRandomizer(mineLevel.blocks);
             BuildBoxEnvironment(Vector3.zero);
         }
 

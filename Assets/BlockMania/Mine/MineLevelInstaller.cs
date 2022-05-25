@@ -6,7 +6,7 @@ using Zenject;
 
 namespace BlockMania.Mine
 {
-    public class MineInstaller : MonoInstaller
+    public class MineLevelInstaller : MonoInstaller
     {
         [SerializeField] private Camera mainCamera;
         [SerializeField] private HeroSystem heroSystem;
@@ -29,7 +29,7 @@ namespace BlockMania.Mine
         }
         private void BindCamera()
         {
-            Container.Bind<Camera>().FromInstance(mainCamera);
+            Container.Bind<Camera>().FromInstance(mainCamera).AsSingle();
         }
         private void BindBlockSystem()
         {

@@ -29,8 +29,8 @@ namespace BlockMania.Mine.Hero
             heroAnimator.diggingAnimatorBehavior.OnStateExitEvent += blockSystem.Digger.OnStopDigPreviousBlock;
             uiSystem.Joystick.OnBeginDragEvent += heroAnimator.Walk;
             uiSystem.Joystick.OnEndDragEvent += heroAnimator.Idle;
-            uiSystem.DigButton.OnStartHoldEvent += heroAnimator.StartDig;
-            uiSystem.DigButton.OnEndHoldEvent += heroAnimator.EndDig;
+            uiSystem.DigButton.OnPressEvent += heroAnimator.StartDig;
+            uiSystem.DigButton.OnReleaseEvent += heroAnimator.EndDig;
         }
     }
 }
