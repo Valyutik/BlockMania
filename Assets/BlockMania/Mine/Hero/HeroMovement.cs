@@ -17,9 +17,10 @@ namespace BlockMania.Mine.Hero
 
         public void OnMovePlayer(float vertical, float horizontal)
         {
-            _rigidbody.velocity = (_transform.forward *
-                vertical + _transform.right *
-                horizontal) * speed;
+            _rigidbody.velocity = (
+                _transform.forward * vertical +
+                _transform.right * horizontal)
+                                  * speed;
         }
 
     }
